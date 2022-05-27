@@ -1,3 +1,19 @@
-h1{
-  color: red;
+h1.nickname {
+  font-family: 'Nova Slim', cursive;
+  font-size: 50px;
+  text-align: center;
 }
+
+.form {
+ text-align: center;
+}
+
+.form input 
+  height: 25px;
+}
+
+
+.nickname-container {
+  display: flex;
+  justify-content: center;
+} 
