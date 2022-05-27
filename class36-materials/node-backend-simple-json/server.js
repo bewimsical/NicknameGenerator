@@ -32,11 +32,11 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { "Content-Type": "application/json" });
         let adjArray = ['colorful','happy','enthusiastic','agreeable','funky']
         let verbArray = ['dancing', 'walking', 'working', 'coding', 'playing']
-        let num = Math.floor(Math.random()*adjArray.length)
+
         const objToJson = {
-          name: adjArray[num],
-          status: verbArray[num],
-          currentOccupation: "Leon"
+          adj: adjArray[Math.floor(Math.random()*adjArray.length)],
+          verb: verbArray[Math.floor(Math.random()*verbArray.length)],
+          name: params["student"]
           //alternative blah 
         };
         res.end(JSON.stringify(objToJson));

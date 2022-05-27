@@ -4,16 +4,33 @@ h1.nickname {
   text-align: center;
 }
 
-.form {
+.form-area {
  text-align: center;
+ 
 }
 
-.form input 
-  height: 25px;
-}
+.form-area #userName,
+.form-area #clickMe {
+  height:35px;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
 
+}
+.form-area #clickMe {
+  cursor: pointer;
+  height:40px;
+}
 
 .nickname-container {
   display: flex;
   justify-content: center;
 } 
+
+#personName,
+#personStatus,
+#personOccupation {
+  font-family: 'Nova Slim', cursive;
+  font-size: 50px;
+  min-width: 25px;
+  padding: 10px;
+}
